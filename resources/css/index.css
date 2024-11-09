@@ -1,0 +1,126 @@
+* {
+  color: white;
+}
+
+html {
+  background-color: #753C77;
+}
+
+.hero,
+.hero .video-bg{
+  width: 100%;
+}
+
+.hero .video-bg {
+  object-fit: cover;
+}
+
+.welcome {
+  margin: 1rem 0 1rem;
+}
+
+.welcome .welcome-content,
+.welcome .welcome-video {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.welcome-content p {
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-align: center;
+  width: 400px;
+}
+
+.welcome-content button {
+  border-radius: 100px;
+}
+
+.welcome-content button img {
+  width: 210px;
+}
+
+.welcome-content button img:hover {
+  opacity: 0.9;
+  transition: all 0.3s ease;
+}
+
+.welcome-video {
+  margin-top: 1rem;
+}
+
+.welcome-video .video-thumbnail-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-video .video-thumbnail-container img {
+  width: 60%;
+}
+
+.welcome-video .video-thumbnail-container button {
+  position: absolute;
+  width: 7rem;
+}
+
+.welcome-video .video-thumbnail-container button:hover {
+  opacity: 0.9;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+  .welcome-content p {
+    font-size: 1.3rem; 
+    width: 340px;
+  }
+
+  .welcome-content button img {
+    width: 180px;
+  }
+
+  .welcome-video .video-thumbnail-container img {
+    width: 70%;
+  }
+
+  .welcome-video .video-thumbnail-container button {
+    width: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero .video-bg {
+    height: 50vh;
+    object-position: right -5rem top 0;
+  }
+
+  .welcome,
+  .welcome-video {
+    margin-top: 2rem;
+  }
+
+  .welcome .welcome-content {
+    gap: 2rem
+  }
+
+  .welcome-content p {
+    font-size: 1rem; 
+    width: 250px;
+  }
+
+  .welcome-content button img {
+    width: 100px;
+  }
+
+  .welcome-video .video-thumbnail-container img {
+    width: 80%;
+  }
+
+  .welcome-video .video-thumbnail-container button {
+    width: 4rem;
+  }
+}

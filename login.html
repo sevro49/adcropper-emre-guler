@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./resources/css/login.css">
+    <link rel="stylesheet" href="./resources/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    
+    <!-- Login section -->
+    <section class="login">
+      <a href="./index.html">
+        <img src="./resources/images/adcropper-logo.png" alt="adcropper-logo">
+      </a>
+      <h1>Welcome to Adcropper!</h1>
+      <form action="index.html" method="get" class="login-form">
+        <div class="email-input"> 
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="info@adcropper.com" required>
+        </div>
+        <div class="password-input">
+          <div class="password-label">
+            <label for="password">Password</label>
+            <a href="./new-password.html">Forgot Password?</a>
+          </div>
+          <input id="password" type="password" placeholder="************" required>
+          <div class="remember-me-input">
+            <input type="checkbox" name="remember-me" id="remember-me">
+            <label for="remember-me">Remember Me</label>
+          </div>
+        </div>
+        <button class="sign-in">Sign In</button>
+    </section>
+  </body>
+</html>
