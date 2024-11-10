@@ -6,6 +6,7 @@
   <title>Emre Güler | Front-End Case</title>
   <link rel="stylesheet" href="./resources/css/main.css">
   <link rel="stylesheet" href="./resources/css/index.css">
+  <link rel="stylesheet" href="./resources/css/ui-elements.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -32,5 +33,30 @@
       </div>
     </div>
   </section>
+
+  <!-- UI Elements -->
+  <section class="ui-elements">
+
+    <!-- Switch -->
+    <div class="switch-container">
+      <input type="checkbox" id="switch" class="switch-input">
+      <label for="switch" class="switch-label"></label>
+    </div>
+  
+    <!-- Slider -->
+    <div class="slider-container">
+      <!-- <input type="range" id="range" class="slider" min="0" max="60" value="30">
+      <input id="myinput" min="0" max="60" type="range" value="30" /> -->
+      <!-- <input id="myinput" min="0" max="60" type="range" value="30" /> -->
+      <input class="slider" min="0" max="60" type="range" value="30" />
+    </div>
+  </section>
+
+  <script>
+document.querySelector(".slider").oninput = function() {
+  var value = (this.value-this.min)/(this.max-this.min)*100
+  this.style.background = 'linear-gradient(to right, #9C346B 0%, #9C346B ' + value + '%, #fff ' + value + '%, white 100%)'
+};
+  </script>
 </body>
 </html>
